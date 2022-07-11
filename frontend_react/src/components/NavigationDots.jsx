@@ -1,5 +1,6 @@
 import React from 'react'
 
+/* Aqui se configura los puntos de navegacion que estanal lado derecho de cada seccion*/ 
 const NavigationDots = ({active}) => {
   return (
     <div className='app__navigation'>

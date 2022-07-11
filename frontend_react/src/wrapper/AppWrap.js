@@ -9,6 +9,11 @@
 import React from 'react'
 import { NavigationDots, SocialMedia } from '../components';
 
+/**Aqui configuramos el AppWrap para que envuelva a los componentes de seccion de la web
+ * de esta manera le aplicamos a cada seccion los componentes NavigationDots (puntos de navegacion) 
+ * y SocialMedia(iconos de redes sociales). Este componente envolvera cada seccion y lo reutilizaremos
+ * en cada seccion para aprovechar su funcionalidad.
+ */
 const AppWrap = (Component, idName, classNames) => function HOC() {
   return (
     <div id={idName} className={`app__container ${classNames}`}>

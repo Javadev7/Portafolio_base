@@ -59,13 +59,14 @@ const Header = () => {
           variant={scaleVariants}
           whileInView={ scaleVariants.whileInView }
           className='app__header-circles'
-        >
+          /* Abajo se mapea cada imagen de forma destructurada, ingresan como parametro y se le asigna un index en automatico
+          que tambien ingresa, finalmente se renderiza cada imagen con las clases de estilo correspondiente*/>
           {[images.flutter, images.redux, images.sass].map((circle, index)=>(
             <div className='circle-cmp app__flex' key={`circle-${index}`}>
               <img src={circle} alt='circle' /> 
             </div>
           ))}
-      </motion.div>
+        </motion.div>
     </div>
   )
 }
