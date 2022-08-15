@@ -4,7 +4,7 @@ import ReactTooltip from 'react-tooltip';
 
 import { AppWrap, MotionWrap} from '../../wrapper';
 import { urlFor, client} from '../../client';
-import { ClientError } from '@sanity/client';
+//import { ClientError } from '@sanity/client';
 
 import './Skills.scss'
 
@@ -14,6 +14,7 @@ const [skills, setSkills] = useState([]);
 
 
 
+  /* A hook that is used for data fetching, component state, and for executing side effects. */
   useEffect(() => { 
     const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
